@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="web_page">
+    <div class="body">
+
+        <div class="left_board"> <i style="margin-top: 60px; margin-left: 13px; cursor: pointer;"
+                class="fa-regular fa-house"></i> <br>
+            <i style="margin-top: 60px; margin-left: 13px; cursor: pointer;" class="fa-solid fa-location-dot"></i> <br>
+            <i style="margin-top: 60px; margin-left: 13px; cursor: pointer;" class="fa-regular fa-calendar"></i> <br>
+            <i style="margin-top: 60px; margin-left: 13px; cursor: pointer;" class="fa-solid fa-ellipsis"></i> <br>
+            <i style="margin-top: 60px; margin-left: 13px; cursor: pointer;" class="fa-solid fa-right-from-bracket"></i>
+        </div>
+        <form class="weatherform" action="">
+            <nav class="nav">
+                <div class="logo_div">
+                    <h1> <img class="logo_image"
+                            style="height: 50px; width: 50px; border-radius: 100%; cursor: pointer;"
+                            src="images/weather logo.png" alt=""> </h1>
+                    <h2 class="logo_title">SKYUP</h2>
+                </div>
+                <div class="search_div"> <input type="text" class="search" placeholder="Search for a city or airport">
+                    <button type="submit"
+                        style="height: 30px; width: 50px; border-radius: 90%; margin-top: 10px; border: 0; cursor: pointer;">
+                        <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+                <div> <i style="height: 30px; width: 30px; cursor: pointer; margin-top: 15px;"
+                        class="fa-solid fa-envelope"></i> </div>
+                <div> <i style=" height: 30px; width: 30px; cursor: pointer; margin-top: 15px;"
+                        class="fa-regular fa-bell"></i> </div>
+                <div> <img style="height: 50px; width: 50px; border-radius: 90%; cursor: pointer;"
+                        src="images/portrait dp.jpeg" alt="">
+                </div>
+
+            </nav>
+
+            <div class="main_div">
+                <div class="card" style="display: none;">
+                    <h1 class="cityDisplay"> Lokoja </h1>
+                    <p class="tempDisplay"> 90°F </p>
+                    <p class="humidityDisplay"> Humidity:75% </p>
+                    <p class="descpDisplay"> Clear Skies </p>
+                    <p class="weatherEmoji"> ☀️</p>
+                    <p class="errorDisplay"> Please Enter a City</p>
+                </div>
+
+                <div class="second_div">
+                    <h2 class="header_sec">Forecast Summary For The Week</h2>
+
+                    <div class="week">
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                        <div class="day">Sun</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+
+        </div>
+
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
