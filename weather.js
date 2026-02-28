@@ -41,6 +41,7 @@ function displayweatherInfo(data) {
 
     card.textContent = "";
     card.style.display = "flex"
+    card.style.width = "500px"
 
     const cityDisplay = document.createElement("h1");
     const tempDisplay = document.createElement("p");
@@ -97,4 +98,5 @@ function displayError(message) {
     card.textContent = "";
     card.style.display = "flex";
     card.appendChild(errorDisplay);
+
 }
