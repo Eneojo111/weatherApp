@@ -1,7 +1,8 @@
 const weatherform = document.querySelector(".weatherform");
 const search = document.querySelector(".search");
 const card = document.querySelector(".card");
-const apiKey = "45d58806a69b84cf696aea63124f5876"
+const apiKey = "45d58806a69b84cf696aea63124f5876";
+const logout = document.querySelector(".fa-solid fa-right-from-bracket");
 
 weatherform.addEventListener("submit", async event => {
 
@@ -98,5 +99,15 @@ function displayError(message) {
     card.textContent = "";
     card.style.display = "flex";
     card.appendChild(errorDisplay);
+};
 
-}
+logout.addEventListener("click", function() {
+    const userconfirm = confirm("Are you sure you want to logout?")
+    if(userconfirm){
+        localStorage.clear();
+        window.location.href = "login.html";
+    };
+});
+
+
+
