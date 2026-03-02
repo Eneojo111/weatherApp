@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather  Web-App</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -27,7 +27,7 @@
                     <h1> <img class="logo_image"
                             style="height: 50px; width: 50px; border-radius: 100%; cursor: pointer;"
                             src="images/weather logo.png" alt=""> </h1>
-                    <h2 class="logo_title">SKYUP!!!</h2>
+                    <h2 class="logo_title">SKYUP</h2>
                 </div>
                 <div class="search_div"> <input type="text" class="search" placeholder="Search for a city or airport">
                     <button type="submit"
@@ -58,13 +58,49 @@
                     <h2 class="header_sec">Forecast Summary For The Week</h2>
 
                     <div class="week">
-                        <div class="day">Mon</div>
-                        <div class="day">Tue</div>
-                        <div class="day">Wed</div>
-                        <div class="day">Thu</div>
-                        <div class="day">Fri</div>
-                        <div class="day">Sat</div>
-                        <div class="day">Sun</div>
+
+                        <div class="day" data-day="Mon">
+                            <div class="day-name">Mon</div>
+                            <div class="temperature">25°C</div>
+                            <div class="weather-emoji">☀️</div>
+                        </div>
+
+                        <div class="day" data-day="Tue">
+                            <div class="day-name">Tue</div>
+                            <div class="temperature">22°C</div>
+                            <div class="weather-emoji">🌤️</div>
+                        </div>
+
+                        <div class="day" data-day="Wed">
+                            <div class="day-name">Wed</div>
+                            <div class="temperature">18°C</div>
+                            <div class="weather-emoji">🌧️</div>
+                        </div>
+
+                        <div class="day" data-day="Thu">
+                            <div class="day-name">Thu</div>
+                            <div class="temperature">27°C</div>
+                            <div class="weather-emoji">☀️</div>
+                        </div>
+
+                        <div class="day" data-day="Fri">
+                            <div class="day-name">Fri</div>
+                            <div class="temperature">24°C</div>
+                            <div class="weather-emoji">⛅</div>
+                        </div>
+
+                        <div class="day" data-day="Sat">
+                            <div class="day-name">Sat</div>
+                            <div class="temperature">20°C</div>
+                            <div class="weather-emoji">🌦️</div>
+                        </div>
+
+                        <div class="day" data-day="Sun">
+                            <div class="day-name">Sun</div>
+                            <div class="temperature">26°C</div>
+                            <div class="weather-emoji">🌞</div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -78,6 +114,6 @@
     <script src="weather.js"></script>
 </body>
 
-
 </html>
+
 
